@@ -1,0 +1,11 @@
+h1,
+h2,
+h3 {
+  text-transform: capitalize;
+}
+div.container-lg h1:first-of-type a {
+  display: none;
+}
+h1 {
+  text-align: center;
+}

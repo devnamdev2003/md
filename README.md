@@ -1,15 +1,7 @@
-<style>
-    *{
-        text-transform: capitalize;
-    }
-        div.container-lg h1:first-of-type a {
-            display: none;
-          }
-          h1{
-            text-align: center;
-          }
-</style>
+<link rel="stylesheet" href="./test/style.css">
 
 # [Topics](https://devnamdev2003.github.io/md/)
 
-### [TCS Questions](https://devnamdev2003.github.io/md/question)
+### [TCS Questions](./question.md)
+
+### [Coding Questions](./coding_questions.md)
