@@ -9,6 +9,12 @@
 </style>
 
 # TCS Questions
+- [TCS Questions](#tcs-questions)
+  - [Advanced Quantitative](#advanced-quantitative)
+  - [Advanced Reasoning](#advanced-reasoning)
+  - [Numerical Ability](#numerical-ability)
+  - [Verbal Ability](#verbal-ability)
+  - [Reasoning Ability](#reasoning-ability)
 
 ## Advanced Quantitative
 > ### Question No. 1 
@@ -43,7 +49,7 @@
 
 ## Numerical Ability
 > ### Question No. 1
-> ![](./img/13.png)
+> ![](./img/tcs/13.png)
 > ### Question No. 2
 > An amount becomes five times of its initial investments in a certain amount of time through simple interest. Find out the rate of interest of the transaction if the rate of interest equals to the number of years of the transaction,
 - 25
@@ -52,41 +58,41 @@
 - 40
   
 > ### Question No. 3
->![](./img/1.png)
+>![](./img/tcs/1.png)
 > ### Question No. 4
->![](./img/2.png)
+>![](./img/tcs/2.png)
 
 ---
 
 ## Verbal Ability
 > ### Question No. 1
->![](./img/3.png)
+>![](./img/tcs/3.png)
 > ### Question No. 2
->![](./img/4.png)
+>![](./img/tcs/4.png)
 > ### Question No. 3
->![](./img/5.png)
+>![](./img/tcs/5.png)
 > ### Question No. 4
->![](./img/6.png)
+>![](./img/tcs/6.png)
 > ### Question No. 5
->![](./img/7.png)
+>![](./img/tcs/7.png)
 > ### Question No. 6
->![](./img/14.png)
+>![](./img/tcs/14.png)
 
 ----
 
 ## Reasoning Ability
 
 > ### Question No. 1
->![](./img/9.png)
+>![](./img/tcs/9.png)
 > ### Question No. 2
->![](./img/10.png)
+>![](./img/tcs/10.png)
 > ### Question No. 3
->![](./img/11.png)
+>![](./img/tcs/11.png)
 > ### Question No. 4
->![](./img/12.png)
+>![](./img/tcs/12.png)
 
 > ### Coding
-> ![](./img/8.png)
+> ![](./img/tcs/8.png)
 
 
 
