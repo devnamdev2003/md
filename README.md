@@ -5,3 +5,5 @@
 ### [TCS Questions](./tcs_question.md)
 
 ### [Coding Questions](./coding_questions.md)
+
+### [Interview Questions](./interview_questions/interview_questions.md)
