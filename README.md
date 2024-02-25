@@ -2,6 +2,6 @@
 
 # [Topics](https://devnamdev2003.github.io/md/)
 
-### [TCS Questions](./question.md)
+### [TCS Questions](./tcs_question.md)
 
 ### [Coding Questions](./coding_questions.md)

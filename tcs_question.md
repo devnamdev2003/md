@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./test/style.css">
 
-# TCS Questions
+# [TCS Questions](./tcs_question.md)
 
 - [TCS Questions](#tcs-questions)
   - [Advanced Quantitative](#advanced-quantitative)

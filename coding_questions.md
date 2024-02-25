@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="./test/style.css">
 
-# [Coding Questions](#coding-questions)
+# [Coding Questions](./coding_questions.md)
 
 > ## 1. Problem Statement:
 
