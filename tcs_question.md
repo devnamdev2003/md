@@ -8,6 +8,7 @@
   - [Numerical Ability](#numerical-ability)
   - [Verbal Ability](#verbal-ability)
   - [Reasoning Ability](#reasoning-ability)
+  - [Coding](#coding)
 
 ## Advanced Quantitative
 
@@ -120,6 +121,6 @@
 >
 > ![](./img/tcs/12.png)
 
-> ### Coding
+## Coding
 >
 > ![](./img/tcs/8.png)
