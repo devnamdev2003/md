@@ -442,7 +442,7 @@ You are given a graph (which is in the form of a complete binary tree). You have
 
 Suppose the tree is like this:
 
-![](./img/tree.png)
+![](../img/tree.png)
 
 The customized zig-zag traversal will be [1, 2, 9]. (Take it as 1-based leveling.)
 

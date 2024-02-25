@@ -54,7 +54,7 @@
 
 > ### Question No. 1
 >
-> ![](./img/tcs/13.png)
+> ![](../img/tcs/13.png)
 >
 > ### Question No. 2
 >
@@ -67,11 +67,11 @@
 
 > ### Question No. 3
 >
-> ![](./img/tcs/1.png)
+> ![](../img/tcs/1.png)
 >
 > ### Question No. 4
 >
-> ![](./img/tcs/2.png)
+> ![](../img/tcs/2.png)
 
 ---
 
@@ -79,27 +79,27 @@
 
 > ### Question No. 1
 >
-> ![](./img/tcs/3.png)
+> ![](../img/tcs/3.png)
 >
 > ### Question No. 2
 >
-> ![](./img/tcs/4.png)
+> ![](../img/tcs/4.png)
 >
 > ### Question No. 3
 >
-> ![](./img/tcs/5.png)
+> ![](../img/tcs/5.png)
 >
 > ### Question No. 4
 >
-> ![](./img/tcs/6.png)
+> ![](../img/tcs/6.png)
 >
 > ### Question No. 5
 >
-> ![](./img/tcs/7.png)
+> ![](../img/tcs/7.png)
 >
 > ### Question No. 6
 >
-> ![](./img/tcs/14.png)
+> ![](../img/tcs/14.png)
 
 ---
 
@@ -107,20 +107,20 @@
 
 > ### Question No. 1
 >
-> ![](./img/tcs/9.png)
+> ![](../img/tcs/9.png)
 >
 > ### Question No. 2
 >
-> ![](./img/tcs/10.png)
+> ![](../img/tcs/10.png)
 >
 > ### Question No. 3
 >
-> ![](./img/tcs/11.png)
+> ![](../img/tcs/11.png)
 >
 > ### Question No. 4
 >
-> ![](./img/tcs/12.png)
+> ![](../img/tcs/12.png)
 
 ## Coding
 >
-> ![](./img/tcs/8.png)
+> ![](../img/tcs/8.png)
