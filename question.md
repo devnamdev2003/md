@@ -1,7 +1,11 @@
 <style>
-        h1,h2{
+        div.container-lg h1:first-of-type a {
+            display: none;
+          }
+          h1
+          {
             text-align: center;
-        }
+          }
 </style>
 
 # TCS Questions
