@@ -2,8 +2,8 @@
 
 # [Topics](https://devnamdev2003.github.io/md/)
 
-### [TCS Questions](./tcs_question.md)
+### [TCS Questions](./randum/tcs_question.md)
 
-### [Coding Questions](./coding_questions.md)
+### [Coding Questions](./randum/coding_questions.md)
 
 ### [Interview Questions](./interview_questions/interview_questions.md)

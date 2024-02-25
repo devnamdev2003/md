@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./test/style.css">
+<link rel="stylesheet" href="../test/style.css">
 
 # [TCS Questions](./tcs_question.md)
 

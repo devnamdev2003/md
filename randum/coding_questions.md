@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="./test/style.css">
+<link rel="stylesheet" href="../test/style.css">
 
 # [Coding Questions](./coding_questions.md)
 
