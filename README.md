@@ -7,5 +7,3 @@
 ### [Coding Questions](./randum/coding_questions.md)
 
 ### [Interview Questions](./interview_questions/interview_questions.md)
-
-### [MSSQL Questions](./interview_questions/MSSQL.md)
