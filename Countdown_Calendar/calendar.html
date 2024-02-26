@@ -175,8 +175,8 @@
       // Get target date and start date from query parameters
       const queryString = window.location.search;
       const urlParams = new URLSearchParams(queryString);
-      const targetDate = urlParams.get("startDate");
-      const startDate = urlParams.get("targetDate");
+      const targetDate = urlParams.get("targetDate");
+      const startDate = urlParams.get("startDate");
 
       // Generate initial calendar
       generateCalendar(currentYear, currentMonth, targetDate, startDate);
