@@ -23,8 +23,13 @@
         background-color: lightcoral;
       }
       .highlight {
-        font-weight: 700;
-        font-size: larger;
+        font-weight: 600;
+        font-size: 18px;
+      }
+      #time_details span {
+        display: inline-block;
+        margin-right: 50px;
+        color: red;
       }
     </style>
   </head>
@@ -84,7 +89,7 @@
         const daysLeft = getDaysDifference(new Date(), new Date(targetDate));
         const daysFinished = getDaysDifference(startDate, new Date());
 
-        let html = `<div><p><span class="highlight">Days Left: ${daysLeft}</span> | <span class="highlight">Days Finished: ${daysFinished}</span></p></div>
+        let html = `<div><p id="time_details"><span class="highlight" id="countdown"></span><span class="highlight">Days Left: ${daysLeft}</span><span class="highlight">Days Finished: ${daysFinished}</span></p></div>
                   <table class="table table-bordered">
                     <thead class="thead-dark">
                       <tr>
@@ -185,6 +190,39 @@
       document
         .getElementById("prevMonthBtn")
         .addEventListener("click", showPreviousMonth);
+
+      function updateCountdown() {
+        let startingDate = new Date(startDate);
+        let endingDate = new Date(targetDate);
+
+        let timeLeft = endingDate - new Date();
+        let daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hoursLeft = Math.floor(
+          (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+        );
+        let minutesLeft = Math.floor(
+          (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+        );
+        let secondsLeft = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        document.getElementById("countdown").innerHTML =
+          "Time left: " +
+          daysLeft +
+          "d " +
+          hoursLeft +
+          "h " +
+          minutesLeft +
+          "m " +
+          secondsLeft +
+          "s ";
+
+        if (timeLeft < 0) {
+          clearInterval(interval);
+          document.getElementById("countdown").innerHTML = "Countdown expired!";
+        }
+      }
+
+      let interval = setInterval(updateCountdown, 1000);
     </script>
   </body>
 </html>
