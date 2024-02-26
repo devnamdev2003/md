@@ -74,7 +74,7 @@
 - [CAST Function in SQL Server:](./MSSQL_Answer.md#2-cast-function-in-sql-server)
 - [CONVERT Function in SQL Server:](./MSSQL_Answer.md#3-convert-function-in-sql-server)
 - [Difference Between CAST and CONVERT:](./MSSQL_Answer.md#difference-between-cast-and-convert)
-- [5. Working With Cursors in SQL Server:](./MSSQL_Answer.md#5-working-with-cursors-in-sql-server)
+- [Working With Cursors in SQL Server:](./MSSQL_Answer.md#5-working-with-cursors-in-sql-server)
 - [OVER CLAUSE WITH PARTITION BY IN SQL SERVER](./MSSQL_Answer.md#over-clause-with-partition-by-in-sql-server)
 - [Retrieving Last Generated Identity Column Value in SQL Server - Scope_Identity VS @@identity](./MSSQL_Answer.md#retrieving-last-generated-identity-column-value-in-sql-server---scope_identity-vs-identity)
 - [Row_Number Function In SQL Server - Row_Number With Partition By Clause](./MSSQL_Answer.md#row_number-function-in-sql-server---row_number-with-partition-by-clause)
