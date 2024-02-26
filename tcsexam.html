@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar View</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      th,
+      td {
+        text-align: center;
+      }
+
+      .start-date {
+        background-color: lightgreen;
+      }
+
+      .target-date {
+        background-color: lightcoral;
+      }
+      .highlight {
+        font-weight: 700;
+        font-size: larger;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="text-center mb-4">Calendar View</h1>
+      <div id="countdownInfo" class="text-center mb-3"></div>
+      <div id="calendar" class="table-responsive"></div>
+      <div class="text-center mt-3">
+        <button id="prevMonthBtn" class="btn btn-primary mr-2">
+          &lt; Previous Month
+        </button>
+        <button id="nextMonthBtn" class="btn btn-primary">
+          Next Month &gt;
+        </button>
+      </div>
+    </div>
+
+    <!-- Bootstrap JS and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      let currentYear, currentMonth;
+
+      // Function to calculate days between two dates
+      function getDaysDifference(start, end) {
+        const oneDay = 24 * 60 * 60 * 1000; // hours*minutes*seconds*milliseconds
+        const startDate = new Date(start);
+        const endDate = new Date(end);
+        return Math.round(Math.abs((startDate - endDate) / oneDay));
+      }
+
+      // Function to generate calendar view
+      function generateCalendar(year, month, targetDate, startDate) {
+        const monthNames = [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December",
+        ];
+        const today = new Date();
+        const firstDay = new Date(year, month, 1);
+        const lastDay = new Date(year, month + 1, 0);
+        const daysInMonth = lastDay.getDate();
+        const startingDay = firstDay.getDay();
+        const prevMonthLastDate = new Date(year, month, 0).getDate();
+
+        const daysLeft = getDaysDifference(new Date(), new Date(targetDate));
+        const daysFinished = getDaysDifference(startDate, new Date());
+
+        let html = `<div><p><span class="highlight">Days Left: ${daysLeft}</span> | <span class="highlight">Days Finished: ${daysFinished}</span></p></div>
+                  <table class="table table-bordered">
+                    <thead class="thead-dark">
+                      <tr>
+                        <th colspan="7">${monthNames[month]} ${year}</th>
+                      </tr>
+                      <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                      </tr>
+                    </thead>
+                    <tbody>`;
+
+        let day = 1;
+        let nextMonthDay = 1;
+
+        for (let i = 0; i < 6; i++) {
+          html += "<tr>";
+          for (let j = 0; j < 7; j++) {
+            if (i === 0 && j < startingDay) {
+              const prevMonthDay = prevMonthLastDate - startingDay + j + 1;
+              html += `<td class="text-muted">${prevMonthDay}</td>`;
+            } else if (day > daysInMonth) {
+              html += `<td class="text-muted">${nextMonthDay}</td>`;
+              nextMonthDay++;
+            } else {
+              if (
+                day === today.getDate() &&
+                year === today.getFullYear() &&
+                month === today.getMonth()
+              ) {
+                html += `<td class="bg-primary text-white">${day}</td>`;
+              } else if (
+                day === new Date(startDate).getDate() &&
+                year === new Date(startDate).getFullYear() &&
+                month === new Date(startDate).getMonth()
+              ) {
+                html += `<td class="start-date">${day}</td>`;
+              } else if (
+                day === new Date(targetDate).getDate() &&
+                year === new Date(targetDate).getFullYear() &&
+                month === new Date(targetDate).getMonth()
+              ) {
+                html += `<td class="target-date">${day}</td>`;
+              } else {
+                html += `<td>${day}</td>`;
+              }
+              day++;
+            }
+          }
+          html += "</tr>";
+        }
+        html += "</tbody></table>";
+        document.getElementById("calendar").innerHTML = html;
+      }
+
+      // Function to update calendar view for the next month
+      function showNextMonth() {
+        if (currentMonth === 11) {
+          currentYear++;
+          currentMonth = 0;
+        } else {
+          currentMonth++;
+        }
+        generateCalendar(currentYear, currentMonth, targetDate, startDate);
+      }
+
+      // Function to update calendar view for the previous month
+      function showPreviousMonth() {
+        if (currentMonth === 0) {
+          currentYear--;
+          currentMonth = 11;
+        } else {
+          currentMonth--;
+        }
+        generateCalendar(currentYear, currentMonth, targetDate, startDate);
+      }
+
+      // Get current date
+      const currentDate = new Date();
+      currentYear = currentDate.getFullYear();
+      currentMonth = currentDate.getMonth();
+
+      const startDate = "2024-02-26";
+      const targetDate = "2024-04-17";
+
+      // Generate initial calendar
+      generateCalendar(currentYear, currentMonth, targetDate, startDate);
+
+      // Attach event listeners to navigation buttons
+      document
+        .getElementById("nextMonthBtn")
+        .addEventListener("click", showNextMonth);
+      document
+        .getElementById("prevMonthBtn")
+        .addEventListener("click", showPreviousMonth);
+    </script>
+  </body>
+</html>
