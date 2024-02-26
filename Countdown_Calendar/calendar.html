@@ -172,8 +172,11 @@
       currentYear = currentDate.getFullYear();
       currentMonth = currentDate.getMonth();
 
-      const startDate = "2024-02-26";
-      const targetDate = "2024-04-17";
+      // Get target date and start date from query parameters
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const targetDate = urlParams.get("startDate");
+      const startDate = urlParams.get("targetDate");
 
       // Generate initial calendar
       generateCalendar(currentYear, currentMonth, targetDate, startDate);
