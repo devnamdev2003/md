@@ -16,11 +16,13 @@
       }
 
       .start-date {
-        background-color: lightgreen;
+        background-color: rgb(250, 81, 81);
+        color: aliceblue;
+        text-decoration: line-through;
       }
 
       .target-date {
-        background-color: lightcoral;
+        background-color: rgb(156, 240, 128);
       }
       .highlight {
         font-weight: 600;
@@ -30,6 +32,11 @@
         display: inline-block;
         margin-right: 50px;
         color: red;
+      }
+      .between-date {
+        background-color: rgb(250, 81, 81);
+        color: aliceblue;
+        text-decoration: line-through;
       }
     </style>
   </head>
@@ -138,7 +145,14 @@
                 month === new Date(targetDate).getMonth()
               ) {
                 html += `<td class="target-date">${day}</td>`;
+              } else if (
+                new Date(startDate) <=
+                  new Date(`${year}-${month + 1}-${day}`) &&
+                new Date(`${year}-${month + 1}-${day}`) <= today
+              ) {
+                html += `<td class="between-date">${day}</td>`;
               } else {
+                console.log(`${year}-${month + 1}-${day}`);
                 html += `<td>${day}</td>`;
               }
               day++;
