@@ -5,3 +5,5 @@
 ### [Python Questions](./python.md)
 
 ### [MSSQL Questions](./MSSQL.md)
+
+### [JavaScript Questions](./JavaScript_questions.md)
