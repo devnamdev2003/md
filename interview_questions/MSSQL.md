@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../test/style.css">
 
 # [MSSQl Questions](./MSSQL.md)
+
 - [Introduction to SQL Server - SQL Introduction](./MSSQL_Answer.md#introduction-to-sql-server---sql-introduction)
 - [What Is Data, Database \& Data Management in SQL](./MSSQL_Answer.md#what-is-data-database--data-management-in-sql)
 - [What Is Database Entity in SQL Server - Entity in SQL - Database Entity in SQL](./MSSQL_Answer.md#what-is-database-entity-in-sql-server---entity-in-sql---database-entity-in-sql)
@@ -62,7 +63,7 @@
 - [ROLLUP Command:](./MSSQL_Answer.md#rollup-command)
 - [Grouping Sets in SQL Server:](./MSSQL_Answer.md#grouping-sets-in-sql-server)
 - [MERGE Statement in SQL Server:](./MSSQL_Answer.md#merge-statement-in-sql-server)
-- [Transactions in SQL | ACID Properties in SQL:](./MSSQL_Answer.md#transactions-in-sql--acid-properties-in-sql)
+- [Transactions in SQL , ACID Properties in SQL:](./MSSQL_Answer.md#transactions-in-sql--acid-properties-in-sql)
 - [TRY CATCH or Error Handling in SQL Server:](./MSSQL_Answer.md#try-catch-or-error-handling-in-sql-server)
 - [TRANSACTIONS WITH TRY CATCH IN SQL SERVER](./MSSQL_Answer.md#transactions-with-try-catch-in-sql-server)
 - [TEMPORARY TABLES / LOCAL TEMPORARY TABLE IN SQL SERVER](./MSSQL_Answer.md#temporary-tables--local-temporary-table-in-sql-server)
