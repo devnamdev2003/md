@@ -7,3 +7,5 @@
 ### [MSSQL Questions](./MSSQL.md)
 
 ### [JavaScript Questions](./JavaScript_questions.md)
+
+### [C++](./Cplusplus.md)
