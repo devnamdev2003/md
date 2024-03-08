@@ -22,10 +22,10 @@
     - [count](#count)
     - [multimap](#multimap)
 
-
 </details>
 
 ## [map](https://cplusplus.com/reference/map/)
+
 ### [Construct map](https://cplusplus.com/reference/map/map/map/)
 
 ```cpp
