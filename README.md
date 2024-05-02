@@ -11,3 +11,9 @@
 ### [Countdown_Calendar](./Countdown_Calendar/index.html)
 
 ### [Topics](./Topics/topic.md)
+
+### [IOT](./8th_sem/iot.md)
+
+### [CC](./8th_sem/cc.md)
+
+### [GT](./8th_sem/gt.md)
