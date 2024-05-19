@@ -1,20 +1,19 @@
 import os
-import openai
-
+# import openai
 
 def get_ai_response(user_input):
     print(user_input)
-    openai.api_key = os.getenv('OPENAI_KEY')
-    completion = openai.chat.completions.create(
-        model="gpt-3.5-turbo",
-        messages=[
-            {"role": "system", "content": "You are a helpful assistant for writing a contetn in more than 1000 words"},
-            {"role": "user", "content":  user_input}
-        ]
-    )
-    response_text = completion.choices[0].message.content
-    print(response_text)
-    return response_text
+    # openai.api_key = os.getenv('OPENAI_KEY')
+    # completion = openai.chat.completions.create(
+    #     model="gpt-3.5-turbo",
+    #     messages=[
+    #         {"role": "system", "content": "You are a helpful assistant for writing a contetn in more than 1000 words"},
+    #         {"role": "user", "content":  user_input}
+    #     ]
+    # )
+    # response_text = completion.choices[0].message.content
+    # print(response_text)
+    # return response_text
 
 
 input = """"""

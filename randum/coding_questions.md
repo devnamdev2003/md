@@ -521,3 +521,281 @@ int main()
     result = customZigZag(3, {1, 2, 5, 3, 4});
 }
 ```
+
+
+## 6. Problem Statement:
+
+Winter is here! My friends and I are excitedly planning our trip to Goa. Now, since all the bars and clubs are too expensive there, we have pooled our money together for the expense of the entire trip. However, things are not that easy. Like every group, we have some internal politics going on. Since some people have a huge cold war going on between them, so if either one of them goes, the other person would bail out. But, we need to maximize our pooled mon! While my friend Mohit is trying to solve the problem because of how great he is at money matters, he needs someone to double-check his work. Can you help him out?
+
+>Input:
+
+- The first line contains 8 space-separated integers denoting the money contributed by each member in order.
+
+- The next line will contain the total number of pairs having a cold war between them. Let us denote this by P.
+
+- The next P lines will contain 2 numbers separated by a space showing the members having a cold war.
+
+> Output:
+
+The output will give the maximum amount of money that can be pooled
+
+> Constraints
+
+* Numbers used to denote members will be (1-8) for every 8 members.
+
+* The pairs having the cold wars will be numbered between 1-8 as per the member.
+
+* Every input is guaranteed to easily fit in 32-bit integer type.
+
+>Examples
+
+```
+Input:
+
+3 1 4 5 2 3 4 1 9
+
+4
+
+1 2
+
+2 3
+
+4 5
+
+7 8
+
+Output:
+
+30
+```
+
+> Explanation:
+
+To maximise the pooled money. 2.5.6 and 8 will go to Goa.
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+bool isValidSubset(int subset, const vector<pair<int, int>>& cold_wars) {
+    for (const auto& pair : cold_wars) {
+        int member1 = pair.first - 1;
+        int member2 = pair.second - 1;
+        if ((subset & (1 << member1)) && (subset & (1 << member2))) {
+            return false;
+        }
+    }
+    return true;
+}
+
+int fun(vector<int> arr, vector<vector<int>> adges) {
+    vector<pair<int, int>> parr;
+    for (const auto& edge : adges) {
+        parr.emplace_back(edge[0], edge[1]);
+    }
+
+    int ans = 0;
+
+    for (int subset = 1; subset < (1 << 8); ++subset) {
+        if (isValidSubset(subset, parr)) {
+            int current_money = 0;
+            for (int i = 0; i < 8; ++i) {
+                if (subset & (1 << i)) {
+                    current_money += arr[i];
+                }
+            }
+            ans = max(ans, current_money);
+        }
+    }
+
+    return ans;
+}
+
+int main() {
+    // Example usage
+    vector<int> contributions = {3, 14, 5, 2, 3, 4, 1, 9};
+    vector<vector<int>> cold_war_pairs = {{1, 2}, {2, 3}, {4, 5}, {7, 8}};
+
+    cout << fun(contributions, cold_war_pairs) << endl;
+
+    return 0;
+}
+
+```
+
+## 7. Problem Statement:
+
+Given a sequence of size N, find the longest strictly increasing subsequence array, that you can make out of this array if you are allowed to reshuffle the elements of the array according to your wish.
+
+A subsequence of a sequence is what you will obtain if you delete certain elements of the current sequence.
+
+> Input Format -
+
+The first line contains a single integer N, denoting the number of values of the array. Then, N lines follow, denoting the values of the array.
+
+> Output Format -
+
+Print a single line, the answer to the problem
+
+> Constraints
+
+1 <= N <= 1,00,000
+
+1 <= array values <= 1,000,000,000
+
+>Examples
+
+```
+Input:
+
+5
+5
+3
+3
+3
+1
+
+Output:
+
+3
+```
+
+> Explanation: 
+
+Let's Re-order the elements, as (1,3,5.3.3). We can now, find the longest strictly increasing subsequence of this array, which will be (1.3.5), and it's length is 3.
+
+>code:
+
+```cpp
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <unordered_set>
+
+using namespace std;
+
+int main() {
+    // Read input size
+    int N;
+    cin >> N;
+
+    // Read the array
+    vector<int> arr(N);
+    for(int i = 0; i < N; ++i) {
+        cin >> arr[i];
+    }
+
+    // Sort the array
+    sort(arr.begin(), arr.end());
+
+    // Remove duplicates and count the length of the longest strictly increasing subsequence
+    int lis_length = 0;
+    int previous_value = -1;
+
+    for(int i = 0; i < N; ++i) {
+        if (arr[i] != previous_value) {
+            ++lis_length;
+            previous_value = arr[i];
+        }
+    }
+
+    // Print the result
+    cout << lis_length << endl;
+
+    return 0;
+}
+
+
+```
+
+## 8. Problem Statement:
+
+
+There was a girl named Muskan who was given a special task to complete. She was given two strings named 'str1' and 'str2', and her task was to check whether these two strings were isomorphic to each other or not.
+
+Muskan knew that two strings are called isomorphic if there is a one-to-one mapping possible for every character of str1 to every character of str2 while preserving the order. But she also knew that for this mapping to be valid, all occurrences of every character in stil should map to the same character in str2.
+
+Muskan started thinking deeply and analyzing the strings to find out if they were isomorphic or not, but she could not find a way to do the task. Help her in completing the task.
+
+> Input Format -
+
+- The first line of input shall consist of a single string str1.
+
+- The second line of input shall consist of a single string str2.
+
+> Output Format -
+
+Print "Yes" if the str1 and str2 is isomorphic otherwise print "No".
+
+> Constraints
+
+1<= (str1[/str2]<=100000
+
+>Examples
+
+```
+Input:
+
+aab
+
+xxy
+
+Output:
+
+Yes
+```
+
+>Explanation:
+
+There are two different characters in "oab" and "xxy", ie 'a' and 'b' with frequencies 2 and 1 respectively.
+
+'a' maps with 'x'
+
+'b' maps with 'y
+
+Hence, "aab" and "xxy" ore isomorphic in nature.
+
+> Code: 
+
+
+```cpp
+#include <vector>
+#include <bits/stdc++.h>
+#include <algorithm>
+#include <map>
+using namespace std;
+
+string areIsomorphic(string str1, string str2)
+{
+
+    if (str1.size() != str2.size())
+    {
+        return "No";
+    }
+    map<char, char> m1, m2;
+    for (int i = 0; i < str1.size(); i++)
+    {
+        char c1 = str1[i], c2 = str2[i];
+        if ((m1.find(c1) != m1.end() && m1[c1] != c2) || (m2.find(c2) != m2.end() && m2[c2] != c1))
+        {
+            return "No";
+        }
+        m1[c1] = c2;
+        m2[c2] = c1;
+    }
+
+    return "Yes";
+}
+
+int main()
+{
+    string str1, str2;
+    cin >> str1 >> str2;
+
+    cout << areIsomorphic(str1, str2);
+
+    return 0;
+}
+```
