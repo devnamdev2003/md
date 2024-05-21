@@ -7,6 +7,7 @@
 ### [Coding Questions](./randum/coding_questions.md)
 
 ### [Interview Questions](./interview_questions/interview_questions.md)
+### [Dev](./interview_questions/dev.md)
 
 ### [Countdown_Calendar](./Countdown_Calendar/index.html)
 
