@@ -573,7 +573,10 @@ Output:
 
 To maximise the pooled money. 2.5.6 and 8 will go to Goa.
 
+{% raw %}
+
 ```cpp
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -631,6 +634,8 @@ int main() {
     return 0;
 }
 ```
+
+{% endraw %}
 
 ## 7. Problem Statement:
 
