@@ -731,7 +731,7 @@ Print "Yes" if the str1 and str2 is isomorphic otherwise print "No".
 
 > Constraints
 
-1<= (str1[/str2]<=100000
+1<= str1[/str2]<=100000
 
 >Examples
 
