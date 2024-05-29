@@ -623,7 +623,7 @@ int fun(vector<int> arr, vector<vector<int>> adges) {
 int main() {
     // Example usage
     vector<int> contributions = {3, 14, 5, 2, 3, 4, 1, 9};
-    vector<vector<int>> cold_war_pairs = {{1, 2}, {2, 3}, {4, 5}, {7, 8}};
+    // vector<vector<int>> cold_war_pairs = {{1, 2}, {2, 3}, {4, 5}, {7, 8}};
 
     // Print the maximum sum of valid contributions
     cout << fun(contributions, cold_war_pairs) << endl;
