@@ -579,10 +579,12 @@ To maximise the pooled money. 2.5.6 and 8 will go to Goa.
 #include <algorithm>
 using namespace std;
 
+// Function to check if a subset is valid based on given cold_war pairs
 bool isValidSubset(int subset, const vector<pair<int, int>>& cold_wars) {
     for (const auto& pair : cold_wars) {
         int member1 = pair.first - 1;
         int member2 = pair.second - 1;
+        // If both members are in the subset, it's not valid
         if ((subset & (1 << member1)) && (subset & (1 << member2))) {
             return false;
         }
@@ -590,22 +592,27 @@ bool isValidSubset(int subset, const vector<pair<int, int>>& cold_wars) {
     return true;
 }
 
+// Function to find the maximum sum of contributions from a valid subset
 int fun(vector<int> arr, vector<vector<int>> adges) {
     vector<pair<int, int>> parr;
+    // Convert edge list to pairs
     for (const auto& edge : adges) {
         parr.emplace_back(edge[0], edge[1]);
     }
 
     int ans = 0;
 
+    // Iterate over all possible subsets of an 8-element array
     for (int subset = 1; subset < (1 << 8); ++subset) {
         if (isValidSubset(subset, parr)) {
             int current_money = 0;
+            // Calculate the sum of contributions for the current subset
             for (int i = 0; i < 8; ++i) {
                 if (subset & (1 << i)) {
                     current_money += arr[i];
                 }
             }
+            // Update the maximum sum found
             ans = max(ans, current_money);
         }
     }
@@ -618,11 +625,11 @@ int main() {
     vector<int> contributions = {3, 14, 5, 2, 3, 4, 1, 9};
     vector<vector<int>> cold_war_pairs = {{1, 2}, {2, 3}, {4, 5}, {7, 8}};
 
+    // Print the maximum sum of valid contributions
     cout << fun(contributions, cold_war_pairs) << endl;
 
     return 0;
 }
-
 ```
 
 ## 7. Problem Statement:
