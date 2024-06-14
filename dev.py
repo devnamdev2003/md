@@ -25,77 +25,9 @@ def get_ai_response(conversation):
         return response_data
 
 
-input = """
-Introduction
-Creating your first project
-Hello world
-Numeric data types
-Text based data types
-Converting string to numbers
-Boolean data type
-Operators
-Remainder
-Var keyword
-Const keyword
-Exercise - Storing user data
-Exercise - Odd/Even checker
-Console Input/Output
-If statements
-Switch statements
-For loops
-While loops
-Conditional operator
-Numeric formatting
-TryParse function
-Exercise - Times table
-Exercise - Fizz buzz game
-Verbatim string literal
-String formatting
-String interpolation
-String concatenation
-Empty string
-String Equals function
-String iteration looping
-String IsNullOrEmpty function
-Exercise - Print string in reverse
-Exercise - Password checker
-Arrays
-Array sorting
-Array reversal
-Array clearing
-Array IndexOf
-Lists
-Dictionary
-Exercise - Odd/Even number split
-Exercise - Array of multiples
-Functions
-Void functions
-Return type functions
-Function parameters
-Optional parameters
-Named parameters
-Out parameters
-Reference parameters
-Exercise - Area of a Triangle
-Exercise - Sum of int Array
-Exception handling
-Try…catch
-Printing error messages
-Exercise - Custom TryParse
-Debugging
-Local/auto window
-Watch window
-Exercise - Fix logic error
-Structures
-Classes
-Class functions
-Class fields
-Class variable/function scope
-Class properties
-Class ToString function override
-Outro
-"""
-last = """Explain every C# topic in more than 1000 words with code examples and output. Write content in such a way that you write the topic title as a heading first and then start the explanation."""
+input = """"""
+
+last = """\nExplain given ASP.net topic in more than 1000 words with code and explain code of each file. Write content in such a way that you write the topic title as a heading first and then start the explanation."""
 
 input = input.split("\n")
 count = 1
