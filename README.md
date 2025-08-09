@@ -13,3 +13,5 @@
 ### [coding](./randum/coding_questions.md)
 
 [1](https://youtu.be/VysIMOguaJs?si=aE9UCGJ4SOQTGDfW)
+
+[movie](https://youtu.be/LPkuYyUE-4s?si=Yu5hmXV8qKLQH1rR)
