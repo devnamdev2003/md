@@ -11,3 +11,5 @@
 ### [Topics](./Topics/topic.md)
 
 ### [coding](./randum/coding_questions.md)
+
+[1](https://youtu.be/VysIMOguaJs?si=aE9UCGJ4SOQTGDfW)
