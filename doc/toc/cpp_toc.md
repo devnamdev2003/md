@@ -1,4 +1,6 @@
-<link rel="stylesheet" href="https://devnamdev2003.github.io/md/static/style.css">
+<link rel="stylesheet" href="https://devnamdev2003.github.io/md/static/style.css"> 
+
+# Table of Contents
 
 - [C++ Programming Language](../main/cpp.md#c-programming-language)
   - [Introduction about C++](../main/cpp.md#introduction-about-c)
@@ -45,7 +47,7 @@
   - [Introduction on Data Operations](../main/cpp.md#introduction-on-data-operations)
   - [Basic Operations](../main/cpp.md#basic-operations)
   - [Precedence and Associativity](../main/cpp.md#precedence-and-associativity)
-  - [Prefix/Postfix Increment \& Decrement](../main/cpp.md#prefixpostfix-increment--decrement)
+  - [Prefix/Postfix Increment & Decrement](../main/cpp.md#prefixpostfix-increment--decrement)
   - [Compound Assignment Operators](../main/cpp.md#compound-assignment-operators)
   - [Relational Operators](../main/cpp.md#relational-operators)
   - [Logical Operators](../main/cpp.md#logical-operators)
@@ -111,14 +113,8 @@
     - [String Manipulation with `std::string`](../main/cpp.md#string-manipulation-with-stdstring)
   - [Character Manipulation](../main/cpp.md#character-manipulation)
     - [Examples of Character Manipulation](../main/cpp.md#examples-of-character-manipulation)
-      - [Changing Characters](../main/cpp.md#changing-characters)
-      - [Extracting Characters](../main/cpp.md#extracting-characters)
-      - [Comparing Characters](../main/cpp.md#comparing-characters)
   - [C-string Manipulation](../main/cpp.md#c-string-manipulation)
     - [Examples of C-string Manipulation](../main/cpp.md#examples-of-c-string-manipulation)
-      - [Length of a C-string](../main/cpp.md#length-of-a-c-string)
-      - [Copying C-strings](../main/cpp.md#copying-c-strings)
-      - [Concatenating C-strings](../main/cpp.md#concatenating-c-strings)
   - [C-string Concatenation and Copy](../main/cpp.md#c-string-concatenation-and-copy)
     - [C-string Concatenation](../main/cpp.md#c-string-concatenation)
     - [C-string Copy](../main/cpp.md#c-string-copy)
@@ -128,7 +124,7 @@
   - [Declaring and Using std::string](../main/cpp.md#declaring-and-using-stdstring)
     - [Declaring std::string](../main/cpp.md#declaring-stdstring)
     - [Using std::string](../main/cpp.md#using-stdstring)
-- [Functions](../main/cpp.md#functions-1)
+- [Functions](../main/cpp.md#functions)
   - [The One Definition Rule](../main/cpp.md#the-one-definition-rule)
   - [First Hand on C++ Functions](../main/cpp.md#first-hand-on-c-functions)
   - [Function Declaration and Function Definitions](../main/cpp.md#function-declaration-and-function-definitions)

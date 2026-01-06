@@ -2,16 +2,16 @@
 
 # Topics
 
-### [Python](./doc/index/python_index.md)
+### [Python](./doc/toc/python_toc.md)
 
-### [C++](./doc/index/cpp_index.md)
+### [C++](./doc/toc/cpp_toc.md)
 
-### [MSSQL](./doc/index/MSSQL_index.md)
+### [MSSQL](./doc/toc/MSSQL_toc.md)
 
-### [JavaScript](./doc/index/JavaScript_index.md)
+### [JavaScript](./doc/toc/JavaScript_toc.md)
 
-### [C#](./doc/index/cs_index.md)
+### [C#](./doc/toc/cs_toc.md)
     
-### [ASP.NET](./doc/index/dotnet_index.md)
+### [ASP.NET](./doc/toc/dotnet_toc.md)
 
-### [AWS](./doc/index/AWS_index.md)
+### [AWS](./doc/toc/AWS_toc.md)
