@@ -1,17 +1,17 @@
-<link rel="stylesheet" href="./test/style.css">
+<link rel="stylesheet" href="https://devnamdev2003.github.io/md/static/style.css">
 
-# [content](https://devnamdev2003.github.io/md/)
+# Topics
 
-### [TCS Questions](./randum/tcs_question.md)
+### [Python](./doc/index/python_index.md)
 
-### [Interview Questions](./interview_questions/interview_questions.md)
+### [C++](./doc/index/cpp_index.md)
 
-### [Countdown_Calendar](./Countdown_Calendar/index.html)
+### [MSSQL](./doc/index/MSSQL_index.md)
 
-### [Topics](./Topics/topic.md)
+### [JavaScript](./doc/index/JavaScript_index.md)
 
-### [coding](./randum/coding_questions.md)
+### [C#](./doc/index/cs_index.md)
+    
+### [ASP.NET](./doc/index/dotnet_index.md)
 
-[1](https://youtu.be/VysIMOguaJs?si=aE9UCGJ4SOQTGDfW)
-
-[movie](https://youtu.be/LPkuYyUE-4s?si=Yu5hmXV8qKLQH1rR)
+### [AWS](./doc/index/aws_index.md)

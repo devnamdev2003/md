@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>README Viewer</title>
+
+    <!-- Markdown parser -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        pre {
+            background: #f4f4f4;
+            padding: 12px;
+            overflow-x: auto;
+        }
+        code {
+            color: #c7254e;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="content">Loading README...</div>
+
+    <script>
+        fetch('index.md')
+            .then(res => res.text())
+            .then(md => {
+                document.getElementById('content').innerHTML = marked.parse(md);
+            })
+            .catch(err => {
+                document.getElementById('content').innerText = 'Failed to load README.md';
+            });
+    </script>
+
+</body>
+</html>
