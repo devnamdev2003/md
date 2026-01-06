@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="https://devnamdev2003.github.io/md/static/style.css">
 
-# [JavaScript Answers](./JavaScript_answer.md)
+# JavaScript 
 
 ## **JavaScript: A Comprehensive Overview**
 
@@ -177,7 +177,7 @@ console.log(status); // Output: "Adult"
 
 The ternary operator provides a concise way to write conditional expressions, especially when the if-else statement is straightforward.
 
-## **Logical Operators (&& and ||):**
+## **Logical Operators:**
 
 JavaScript provides two logical operators: `&&` (logical AND) and `||` (logical OR). These operators are used to combine multiple conditional expressions and evaluate them in a single boolean context.
 

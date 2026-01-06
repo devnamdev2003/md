@@ -14,7 +14,7 @@
   - [**Truthy and Falsy Values:**](../main/JavaScript.md#truthy-and-falsy-values)
   - [**If-Else Statement:**](../main/JavaScript.md#if-else-statement)
   - [**Ternary Operator:**](../main/JavaScript.md#ternary-operator)
-  - [**Logical Operators (\&\& and ||):**](../main/JavaScript.md#logical-operators--and-)
+  - [**Logical Operators:**](../main/JavaScript.md#logical-operators)
   - [**Nested If-Else:**](../main/JavaScript.md#nested-if-else)
   - [**If-Elseif-Else:**](../main/JavaScript.md#if-elseif-else)
   - [**Switch Statement:**](../main/JavaScript.md#switch-statement)
