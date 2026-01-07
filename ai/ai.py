@@ -1,84 +1,14 @@
 from google import genai
+from dotenv import load_dotenv
+import os
 
-client = genai.Client(api_key="AIzaSyD40Ph78rlz0g-9VHgX5lpodaAwSTsqztU")
+load_dotenv()
+print(os.getenv("key2"))
+client = genai.Client(api_key=os.getenv("key2"))
 chat = client.chats.create(model="gemini-2.5-flash")
 
 data = {
-    "CLOUD COMPUTING FUNDAMENTALS": [
-        "1. What is Cloud Computing and How It Works",
-        "2. Problems with Traditional On-Premises Infrastructure",
-        "3. Benefits of Using Cloud Computing",
-        "4. Real-World Examples of Cloud Usage",
-        "5. Types of Cloud Computing (Public, Private, Hybrid, Multi-Cloud)",
-        "6. Cloud Deployment Models Explained",
-        "7. Cloud Service Models Explained (IaaS, PaaS, SaaS)",
-    ],
-    "AWS OVERVIEW & BASICS": [
-        "8. What is Amazon Web Services (AWS)",
-        "9. Why AWS is the Leading Cloud Provider",
-        "10. Overview of AWS Services and Categories",
-    ],
-    "AWS GLOBAL INFRASTRUCTURE": [
-        "11. What is AWS Global Infrastructure",
-        "12. What is an AWS Region and Why It Matters",
-        "13. What is an AWS Availability Zone",
-        "14. How Availability Zones Provide High Availability",
-        "15. What are AWS Edge Locations and CDN Concept",
-    ],
-    "AWS SHARED RESPONSIBILITY MODEL": [
-        "16. What is the AWS Shared Responsibility Model",
-        "17. AWS Responsibilities vs Customer Responsibilities",
-        "18. Shared Responsibility Model for Compute Services",
-        "19. Shared Responsibility Model for Storage Services",
-        "20. Shared Responsibility Model for Database Services",
-    ],
-    "ACCESSING & MANAGING AWS": [
-        "21. How to Access AWS (AWS Management Console, CLI, SDK)",
-        "22. What is the AWS Management Console",
-        "23. What is the AWS Command Line Interface (CLI)",
-        "24. What are AWS SDKs and When to Use Them",
-    ],
-    "COMPUTE SERVICES (SERVERS)": [
-        "25. What is Compute in Cloud Computing",
-        "26. What is an Amazon EC2 Virtual Server",
-        "27. Types of EC2 Instances and Their Use Cases",
-        "28. What is an Amazon Machine Image (AMI)",
-        "29. How EC2 Key Pairs Work for Secure Access",
-        "30. What are Security Groups and How They Protect EC2",
-        "31. What is Elastic Load Balancing and Why It Is Needed",
-        "32. Types of AWS Load Balancers Explained",
-        "33. What is Auto Scaling and How It Works",
-        "34. How High Availability and Fault Tolerance Are Achieved",
-    ],
-    "STORAGE SERVICES": [
-        "35. What is Cloud Storage",
-        "36. What is Amazon S3 Object Storage",
-        "37. How S3 Buckets and Objects Work",
-        "38. S3 Storage Classes and Cost Optimization",
-        "39. What is S3 Versioning and Lifecycle Management",
-        "40. How Security and Access Control Work in S3",
-        "41. What is Amazon EBS Block Storage",
-        "42. What is Amazon EFS File Storage",
-        "43. Difference Between S3, EBS, and EFS",
-    ],
-    "DATABASE SERVICES": [
-        "44. What is a Database and Why Applications Need It",
-        "45. Difference Between Relational and Non-Relational Databases",
-        "46. What is Amazon RDS Managed Relational Database",
-        "47. Supported Database Engines in Amazon RDS",
-        "48. What is Amazon Aurora and Why It Is Faster",
-        "49. What is Amazon DynamoDB NoSQL Database",
-        "50. When to Use DynamoDB vs RDS",
-        "51. What is Amazon Redshift Data Warehouse",
-        "52. How Backup, Restore, and Disaster Recovery Work",
-    ],
     "NETWORKING & CONTENT DELIVERY": [
-        "53. What is Networking in Cloud Computing",
-        "54. What is an Amazon Virtual Private Cloud (VPC)",
-        "55. What are Subnets and Why Public and Private Subnets Are Used",
-        "56. What is an Internet Gateway",
-        "57. What is a NAT Gateway and Why It Is Required",
-        "58. How Route Tables Control Network Traffic",
         "59. Difference Between Security Groups and Network ACLs",
         "60. What is an Elastic IP Address",
         "61. What is DNS and How It Works",
@@ -124,57 +54,9 @@ data = {
         "91. What is AWS Glue Data Integration Service",
         "92. What is Amazon QuickSight BI Tool",
     ],
-    "AI & MACHINE LEARNING SERVICES": [
-        "93. What is Artificial Intelligence and Machine Learning in AWS",
-        "94. What is Amazon Rekognition Image and Video Analysis",
-        "95. What is Amazon Comprehend Natural Language Processing",
-        "96. What is Amazon Lex Chatbot Service",
-        "97. What is Amazon Polly Text-to-Speech Service",
-    ],
-    "INFRASTRUCTURE AS CODE & MANAGEMENT": [
-        "98. What is Infrastructure as Code",
-        "99. What is AWS CloudFormation and Why It Is Used",
-        "100. What is AWS Elastic Beanstalk Application Deployment",
-        "101. What is AWS Systems Manager",
-    ],
-    "DEVOPS & CI/CD": [
-        "102. What is DevOps in AWS",
-        "103. What is CI/CD Pipeline",
-        "104. What is AWS CodeCommit",
-        "105. What is AWS CodeBuild",
-        "106. What is AWS CodeDeploy",
-        "107. What is AWS CodePipeline",
-    ],
-    "PRICING, BILLING & COST MANAGEMENT": [
-        "108. How AWS Pricing Works",
-        "109. What is the AWS Free Tier and Its Limits",
-        "110. What is On-Demand Pricing",
-        "111. What are Reserved Instances",
-        "112. What are Savings Plans",
-        "113. What are Spot Instances",
-        "114. How to Monitor Costs Using AWS Cost Explorer",
-        "115. How to Control Costs Using AWS Budgets",
-    ],
-    "RELIABILITY & ARCHITECTURE BEST PRACTICES": [
-        "116. What is Reliability in Cloud Architecture",
-        "117. What is the AWS Well-Architected Framework",
-        "118. The Five Pillars of the Well-Architected Framework",
-        "119. High Availability Design Principles",
-        "120. Disaster Recovery Strategies in AWS",
-    ],
-    "MIGRATION & SUPPORT": [
-        "121. What is Cloud Migration",
-        "122. Common Cloud Migration Strategies",
-        "123. AWS Migration Tools Overview",
-        "124. What are AWS Support Plans",
-        "125. How to Use AWS Documentation and Whitepapers",
-        "126. What is the AWS Cloud Practitioner Certification",
-        "127. AWS Cloud Practitioner Exam Structure",
-        "128. Real-World AWS Architecture at Beginner Level",
-    ],
 }
 
-fileName = "AWS.md"
+fileName = "AWS3.md"
 
 
 def get_ai_response_google(conversation):
@@ -225,16 +107,27 @@ def createData():
                 print(topics[i + 1])
                 second_topic = topics[i + 1]
             text = f"""
+
             Subject: {heading}
             Topics:
             1. {topics[i]}
             2. {second_topic}
 
-            Instructions:
-            - Explain EACH topic separately and in simple way with examples.
-            - Use an H2 heading for each topic.
-            - Do not merge the topics.
+            Explain these topic in MORE THAN 1000 WORDS, explain EACH topic separately and in simple way with examples Include real-world examples and interview ready answer for every major concept. Include AWS-specific terminology correctly. 
+
+            Formatting rules: 
+            - Each topic MUST be written under an H2 heading (##). 
+            - Use H3 headings (###) for sub-sections when needed. 
+            - Use bullet points, numbered lists, flow diagram, and tables. 
+            - Do NOT repeat the topic list in the answer. 
+            - Do NOT include introductions or conclusions unless required by the topic.
+
+            Output rules: 
+            - Output ONLY the explanation content. 
+            - Do NOT add meta commentary. 
+            - Do NOT say "Sure" or "Here is the explanation".
             """
+            input("press enter...")
             get_ai_chat_response_google(text)
 
 
@@ -242,7 +135,7 @@ def test_ai():
     print("Testing...")
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash", contents="How does AI work?"
+            model="gemini-2.5-flash", contents="hi"
         )
         print(response.text)
     except Exception as e:
@@ -256,4 +149,5 @@ def test_ai():
     # print(response.text)
 
 
-test_ai()
+createData()
+# test_ai()
