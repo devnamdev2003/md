@@ -8724,7 +8724,6 @@ IAM policies support condition keys, which allow you to specify conditions under
 
 # 🛡️ SECURITY SERVICES
 
-
 ## What is Security in the AWS Cloud
 
 Security in the AWS Cloud is a shared responsibility between Amazon Web Services (AWS) and its customers. This fundamental principle, known as the **Shared Responsibility Model**, dictates which aspects of security AWS is responsible for, and which aspects the customer is responsible for. Understanding this model is crucial for anyone operating in the AWS ecosystem, as it directly impacts your security posture and compliance efforts.
@@ -14309,6 +14308,76 @@ graph TD
 ### Conclusion for AWS Free Tier
 
 The AWS Free Tier is an invaluable resource for anyone looking to learn, experiment, or develop small applications on AWS without immediate cost concerns. It provides access to a broad range of services, including compute, storage, databases, and networking, for a limited time or always free. However, vigilance is key. Users must diligently monitor their usage through the AWS Billing Dashboard and AWS Budgets and consistently terminate unused resources to avoid exceeding the specified limits and incurring unexpected charges. Understanding these limits and employing best practices will enable you to maximize the benefits of the AWS Free Tier.
+
+
+### 🔵 12-MONTHS FREE SERVICES (FROM ACCOUNT CREATION DATE)
+
+| AWS Service               | Free Tier Limit        | Important Notes               |
+| ------------------------- | ---------------------- | ----------------------------- |
+| **Amazon EC2**            | 750 hours/month        | Only `t2.micro` or `t3.micro` |
+| EC2 Storage (EBS)         | 30 GB                  | gp2 / gp3 only                |
+| **Amazon S3**             | 5 GB storage           | Standard storage only         |
+| S3 Requests               | 2,000 PUT / 20,000 GET | Per month                     |
+| S3 Data Transfer Out      | 100 GB                 | After that → charged          |
+| **Amazon RDS**            | 750 hours/month        | db.t2.micro / db.t3.micro     |
+| RDS Storage               | 20 GB                  | SSD                           |
+| RDS Backup                | 20 GB                  | Automatic backups             |
+| **Elastic Load Balancer** | 750 hours              | 15 GB data                    |
+| **CloudFront**            | 50 GB data             | 2M requests                   |
+
+---
+
+### 🟢 ALWAYS FREE SERVICES (NO EXPIRY)
+
+| AWS Service           | Free Tier Limit   | Notes                       |
+| --------------------- | ----------------- | --------------------------- |
+| **AWS Lambda**        | 1M requests/month | 400,000 GB-seconds          |
+| **Amazon DynamoDB**   | 25 GB storage     | 25 RCU + 25 WCU             |
+| **Amazon SNS**        | 1M publishes      | Email is free               |
+| **Amazon SQS**        | 1M requests       | Standard queue              |
+| **Amazon CloudWatch** | 10 metrics        | 10 alarms                   |
+| CloudWatch Logs       | 5 GB ingestion    | Per month                   |
+| **AWS IAM**           | Unlimited         | Users, roles, policies      |
+| **AWS Auto Scaling**  | Free              | Resources billed separately |
+
+---
+
+### 🟡 TRIAL / LIMITED FREE SERVICES
+
+| AWS Service           | Free Tier Limit    | Notes            |
+| --------------------- | ------------------ | ---------------- |
+| **API Gateway**       | 1M API calls/month | REST APIs        |
+| **AWS CloudShell**    | Free               | 10 GB storage    |
+| **AWS Cost Explorer** | Free               | Basic usage      |
+| **AWS Budgets**       | 2 budgets free     | Alerts supported |
+
+---
+
+### 🔴 COMMON SERVICES THAT CAUSE BILLING (NOT FREE)
+
+| Service                    | Why You Get Charged       |
+| -------------------------- | ------------------------- |
+| NAT Gateway                | Hourly + data cost        |
+| Elastic IP (unused)        | Charged when not attached |
+| EC2 > 750 hrs              | Extra usage billed        |
+| RDS Multi-AZ               | Not in Free Tier          |
+| Inter-region data transfer | Always charged            |
+
+---
+
+### ⚠️ MOST IMPORTANT RULES (REMEMBER)
+
+* Free Tier is **usage-based**, not unlimited
+* AWS **does NOT stop services automatically**
+* Charges start **immediately after limit crosses**
+* Free Tier ends **12 months after account creation**
+
+---
+
+### 🎯 INTERVIEW-READY ONE-LINE ANSWER
+
+> AWS Free Tier provides limited free usage of services like **EC2 (750 hrs), S3 (5 GB), RDS (750 hrs), Lambda (1M requests)** for 12 months, with some services like **IAM, Lambda, DynamoDB** being always free.
+
 
 
 ## What is On-Demand Pricing

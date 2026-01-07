@@ -1,5 +1,26 @@
 <link rel="stylesheet" href="https://devnamdev2003.github.io/md/static/style.css">
 
+- [☁️ CLOUD COMPUTING FUNDAMENTALS](#️-cloud-computing-fundamentals)
+- [🚀 AWS OVERVIEW \& BASICS](#-aws-overview--basics)
+- [🌍 AWS GLOBAL INFRASTRUCTURE](#-aws-global-infrastructure)
+- [🔐 AWS SHARED RESPONSIBILITY MODEL](#-aws-shared-responsibility-model)
+- [🧭 ACCESSING \& MANAGING AWS](#-accessing--managing-aws)
+- [🖥️ COMPUTE SERVICES (SERVERS)](#️-compute-services-servers)
+- [💾 STORAGE SERVICES](#-storage-services)
+- [🗄️ DATABASE SERVICES](#️-database-services)
+- [🌐 NETWORKING \& CONTENT DELIVERY](#-networking--content-delivery)
+- [👤 IDENTITY \& ACCESS MANAGEMENT (IAM)](#-identity--access-management-iam)
+- [🛡️ SECURITY SERVICES](#️-security-services)
+- [📊 MONITORING, LOGGING \& GOVERNANCE](#-monitoring-logging--governance)
+- [🔄 APPLICATION INTEGRATION \& MESSAGING](#-application-integration--messaging)
+- [📈 ANALYTICS SERVICES](#-analytics-services)
+- [🤖 AI \& MACHINE LEARNING SERVICES](#-ai--machine-learning-services)
+- [🧱 INFRASTRUCTURE AS CODE \& MANAGEMENT](#-infrastructure-as-code--management)
+- [🔁 DEVOPS \& CI/CD](#-devops--cicd)
+- [💰 PRICING, BILLING \& COST MANAGEMENT](#-pricing-billing--cost-management)
+- [🏗️ RELIABILITY \& ARCHITECTURE BEST PRACTICES](#️-reliability--architecture-best-practices)
+- [🚚 MIGRATION \& SUPPORT](#-migration--support)
+
 
 ---
 
@@ -1153,6 +1174,12 @@
     - [Best Practices for Using the AWS Free Tier](../main/AWS.md#best-practices-for-using-the-aws-free-tier)
     - [Diagram: AWS Free Tier Monitoring Flow](../main/AWS.md#diagram-aws-free-tier-monitoring-flow)
     - [Conclusion for AWS Free Tier](../main/AWS.md#conclusion-for-aws-free-tier)
+    - [🔵 12-MONTHS FREE SERVICES (FROM ACCOUNT CREATION DATE)](../main/AWS.md#-12-months-free-services-from-account-creation-date)
+    - [🟢 ALWAYS FREE SERVICES (NO EXPIRY)](../main/AWS.md#-always-free-services-no-expiry)
+    - [🟡 TRIAL / LIMITED FREE SERVICES](../main/AWS.md#-trial--limited-free-services)
+    - [🔴 COMMON SERVICES THAT CAUSE BILLING (NOT FREE)](../main/AWS.md#-common-services-that-cause-billing-not-free)
+    - [⚠️ MOST IMPORTANT RULES (REMEMBER)](../main/AWS.md#️-most-important-rules-remember)
+    - [🎯 INTERVIEW-READY ONE-LINE ANSWER](../main/AWS.md#-interview-ready-one-line-answer)
   - [What is On-Demand Pricing](../main/AWS.md#what-is-on-demand-pricing)
     - [Understanding On-Demand Pricing](../main/AWS.md#understanding-on-demand-pricing)
     - [Key Characteristics of On-Demand Pricing](../main/AWS.md#key-characteristics-of-on-demand-pricing)
