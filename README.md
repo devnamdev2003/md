@@ -15,3 +15,5 @@
 ### [ASP.NET](./doc/index/dotnet_index.md)
 
 ### [AWS](./doc/index/AWS_index.md)
+
+### [AWS-Hands-On](./doc/index/aws-hands-on_index.md)
