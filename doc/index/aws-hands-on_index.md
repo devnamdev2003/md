@@ -34,7 +34,7 @@
 
 ---
 
- ## 🟠 PHASE 3: STORAGE & DATA (REAL PROJECT SKILLS)
+## 🟠 PHASE 3: STORAGE & DATA (REAL PROJECT SKILLS)
 
 * 🔲 **LAB 11** – [EBS Volume (attach, detach, resize)](../main/aws-hands-on.md#-ec2-hands-on--lab-11)
 * 🔲 **LAB 12** – [Take Snapshot & Restore EC2](../main/aws-hands-on.md#-ec2-hands-on--lab-12)
@@ -93,11 +93,3 @@
 * 🔲 **LAB 40** – [EC2 Interview Scenario Questions](../main/aws-hands-on.md#-ec2-hands-on--lab-40)
 
 ---
-
-## 🧠 AFTER COMPLETING ALL LABS
-
-You will be able to:
-* Design EC2 architecture
-* Explain EC2 **from scratch**
-* Clear **AWS Cloud Practitioner / Associate**
-* Answer **real interview questions confidently**
